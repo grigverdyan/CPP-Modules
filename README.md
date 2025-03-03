@@ -22,6 +22,7 @@
 
 ---
 
+
 ## 📚 About the Modules
 
 This repository contains my solutions to the C++ Modules 00 through 09 from the 42 Yerevan curriculum (and likely other 42 schools).  These modules cover a wide range of fundamental and intermediate C++ concepts, building a strong foundation for object-oriented programming.  Each module focuses on specific aspects of the language, progressively increasing in complexity.
@@ -31,6 +32,7 @@ This repository contains my solutions to the C++ Modules 00 through 09 from the 
 > *   The C++98 standard is enforced.  Features from later standards (C++11, C++14, etc.) are not allowed.
 > *   Specific restrictions and allowed functions/classes will be detailed in each module's individual en.subject.pdf.  Always refer to the official subject PDF for the definitive requirements.
 > *   Code style and formatting are crucial.
+
 
 ## 🗂️ Module Breakdown
 
@@ -109,7 +111,7 @@ This section provides a brief overview of each module.  For detailed instruction
     *   Writing code that leverages the power and efficiency of the STL.
         *   Merge-Insertion algorithm (Ford-Johnson)
 
-    ## 📝 General Rules
+## 📝 General Rules
 
    
 *   **C++98:**  All code must be compliant with the C++98 standard.
