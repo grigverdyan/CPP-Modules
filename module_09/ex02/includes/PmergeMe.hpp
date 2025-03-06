@@ -129,17 +129,15 @@ void insertElements(Container& sortedMain, Container& pending, typename Containe
         if (std::distance(originalContainer.begin(), foundPos) >= order - 1) {
             std::advance(insertStart, -(order - 1));
         } else {
-            insertStart = originalContainer.begin(); // Prevent invalid backward traversal
+            insertStart = originalContainer.begin();
         }
         iterator insertEnd = foundPos;
-        std::advance(insertEnd, 1); // Move one step forward (safe way to create a range)
+        std::advance(insertEnd, 1); 
     
-        // Ensure insertEnd is never beyond `originalContainer.end()`
         if (insertEnd == originalContainer.end()) {
             insertEnd = originalContainer.end();
         }
     
-        // Validate range before inserting
         if (insertStart != insertEnd) {
            updatedSortedContainer.insert(updatedSortedContainer.end(), insertStart, insertEnd);
         }
@@ -156,7 +154,7 @@ void sort(Container &container)
     typedef typename Container::value_type value_type;
     typedef typename Container::iterator iterator;
 
-    static int order = 1;  // Initial order value
+    static int order = 1;  // Initial value
 
     int groupSize = container.size() / order;
     if (groupSize < 2) {
