@@ -219,6 +219,6 @@ void BitcoinExchange::evaluateFile(const std::string& inputFile)
     file.close();
 
     if (!formatLine) {
-         throw std::runtime_error("Invalid Input file: No Inpuy file Format provided \"" + format + "\"");
+         throw std::runtime_error("Invalid Input file: No Input file Format provided \"" + format + "\"");
     }
 }
